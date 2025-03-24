@@ -11,15 +11,15 @@ download_song(){
     echo "Downloading song..."
 
     #Build youtube-dl command on user preference
-    command="yt-dlp -x --audio-format $format -o '/home/mandillahjr/Music/%(title)s.%(ext)s'"
+    command="yt-dlp -x --audio-format $format -o '$HOME/Music/%(title)s.%(ext)s'"
 
     #Embed metadata if enabled
-    if [[ "$metadata" == "yes" || "$metadata" == "y" ]]; then
+    if [[ "$metadata" == "y" ]]; then
         command+=" --add-metadata"
     fi
 
     #Embed thumbnail if enabled
-    if [[ "$thumbnail" == "yes" || "$thumbnail" == "y" ]]; then
+    if [[ "$thumbnail" == "y" ]]; then
         command+=" --embed-thumbnail"
     fi
 
