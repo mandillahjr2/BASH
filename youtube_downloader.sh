@@ -18,7 +18,7 @@ download_song(){
         command+=" --add-metadata"
     fi
 
-    #Embed thumbnail if eavailable
+    #Embed thumbnail if available
     if [[ "$thumbnail" == "y" ]]; then
         command+=" --embed-thumbnail"
     fi
