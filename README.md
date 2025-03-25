@@ -1,1 +1,1 @@
-#Not Another Bash Repo
+#Just Another Bash Repo
